@@ -1,0 +1,10 @@
+node_modules
+npm-debug.log
+.husky
+.prettierrc
+.eslintignore
+.eslintrc
+.gitignore
+.env
+dist
+jest.config.json

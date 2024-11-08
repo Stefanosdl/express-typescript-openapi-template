@@ -10,7 +10,7 @@ const configDefinition = {
     port: {
       doc: 'The server port',
       format: 'port',
-      default: 8040,
+      default: 8080,
       env: 'PORT'
     }
   },
@@ -46,7 +46,7 @@ const configDefinition = {
       doc: 'The api base url',
       format: String,
       env: 'API_BASE_URL',
-      default: 'http://localhost:8040'
+      default: 'http://localhost:8080'
     }
   }
 }
