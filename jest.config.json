@@ -1,0 +1,21 @@
+{
+  "roots": ["<rootDir>/src"],
+  "testEnvironment": "node",
+  "setupFilesAfterEnv": ["<rootDir>/test/setupFile.ts"],
+  "globalSetup": "<rootDir>/test/globalSetup.js",
+  "collectCoverageFrom": ["<rootDir>/src/**/*.{ts,js}"],
+  "coveragePathIgnorePatterns": [
+    "node_modules",
+    ".d.ts",
+    ".test.ts",
+    "<rootDir>/src/app.ts",
+    "<rootDir>/src/index.ts",
+    "<rootDir>/src/clock.ts",
+    "<rootDir>/src/services/mongodb/",
+    "<rootDir>/src/services/express/cluster.ts"
+  ],
+  "collectCoverage": false,
+  "coverageReporters": ["text", "html"],
+  "testMatch": ["<rootDir>/src/**/*.*test.{ts,js}"],
+  "workerIdleMemoryLimit": "512MB"
+}

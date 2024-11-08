@@ -1,0 +1,24 @@
+openapi: 3.1.0
+info:
+  title: Express OpenApi typescript template
+  version: 1.0.0
+  description: This is the open API specification. All exported endpoints should appear in this file.
+paths:
+  /status:
+    get:
+      summary: Returns the status of the app
+      tags:
+        - status
+        - external
+      description: |-
+        Expect to return OK with empty body. Used for monitoring or load balancer health checks.
+
+        **Permission**: -
+
+        **Operation ID**: getStatus
+      operationId: getStatus
+      responses:
+        200:
+          description: OK
+security:
+  - X-API-Key: []

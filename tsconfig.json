@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./src",
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "outDir": "dist",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "target": "esnext",
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": ["src/**/*", "migrations/**/*", "scripts/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
